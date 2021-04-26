@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryMonitoring", "BatteryMonitoring\BatteryMonitoring.csproj", "{B7CF729A-83AB-4A9D-BEEA-897CFB8B87D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryMonitoring.Test", "BatteryMonitoring.Test\BatteryMonitoring.Test.csproj", "{E5EE9EEC-FADA-4828-8489-FD6AA461DCA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7CF729A-83AB-4A9D-BEEA-897CFB8B87D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CF729A-83AB-4A9D-BEEA-897CFB8B87D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CF729A-83AB-4A9D-BEEA-897CFB8B87D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CF729A-83AB-4A9D-BEEA-897CFB8B87D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5EE9EEC-FADA-4828-8489-FD6AA461DCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EE9EEC-FADA-4828-8489-FD6AA461DCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EE9EEC-FADA-4828-8489-FD6AA461DCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EE9EEC-FADA-4828-8489-FD6AA461DCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3AB21AC-3751-4665-BF76-6092385044F0}
+	EndGlobalSection
+EndGlobal
