@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="BatteryMonitoring">
-      <HintPath>..\BatteryMonitoring\bin\BatteryMonitoring.dll</HintPath>
+      <HintPath>..\BatteryMonitoring\bin\Debug\netcoreapp3.1\BatteryMonitoring.dll</HintPath>
     </Reference>
   </ItemGroup>
 
