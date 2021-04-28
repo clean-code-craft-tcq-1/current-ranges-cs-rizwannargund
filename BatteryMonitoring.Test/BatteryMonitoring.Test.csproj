@@ -19,9 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="BatteryMonitoring">
-      <HintPath>..\BatteryMonitoring\bin\Debug\netcoreapp3.1\BatteryMonitoring.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\BatteryMonitoring\BatteryMonitoring.csproj" />
   </ItemGroup>
 
 </Project>
