@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BatteryMonitoring
 {
@@ -8,19 +9,25 @@ namespace BatteryMonitoring
 
         readonly Dictionary<string, int> _currentRanges = new Dictionary<string, int>();
 
+        public void CheckIfReadingsAreNullOrEmpty(List<int> currentValues)
+        {
+            if (currentValues == null || currentValues.Count == 0)
+                throw new ArgumentException("currentValues cannot be null or empty");
+        }
+
         public Dictionary<string, int> GetRangesWithReadings(List<int> currentValues)
         {
-            if (currentValues == null)
-                throw new ArgumentNullException("Measurement cannot be null");
+            CheckIfReadingsAreNullOrEmpty(currentValues);
 
-            if (currentValues.Count == 0)
-            {
-                _currentRanges.Add("0-0", 0);
-            }
+            int min = currentValues.Min();
+            int max = currentValues.Max();
 
-            if (currentValues.Count > 0)
+            if (!_currentRanges.ContainsKey(min + "-" + max))
             {
-                _currentRanges.Add("3-5", 4);
+                _currentRanges.Add(min + "-" + max, 0);
+
+                currentValues.Sort();
+                _currentRanges[min + "-" + max] = currentValues.Count;
             }
 
             return _currentRanges;
